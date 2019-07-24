@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/01_header.css">
+    <link rel="stylesheet" href="css/02_footer.css">
+    <link rel="stylesheet" href="css/03_index.css">
+
+</head>
+<body>
+<div class="header">
+   <!-- <iframe src="01_header.html" frameborder="0" width="100%" height="140px" scrolling="no"></iframe>-->
+</div>
+<div class="container">
+    <!-- 广告区域 -->
+    <div class="banner container">
+            <ul class="banner-img lf" data-load="bannerImgs">
+                 <!--<li> 
+                    <a href="#">
+                        <img src="img/index/carousel/jiuhaopinghengzhe.jpg" alt="">
+                    </a>
+                </li>-->
+            </ul>
+        <!--左右方向按钮-->
+        <a href="javascript:void(0);" class="ck-slide ck-left" data-move="left"></a>
+        <a href="javascript:void(0);" class="ck-slide ck-right" data-move="right"></a>
+        <!--导航小圆点-->
+        <ul class="indicators lf"  data-load="bannerInds">
+            <!--<li></li>-->
+        </ul>
+    </div>
+    <!--静态广告区域-->
+    <div class="home-static-banner container">
+        <!--主页链接汇总-->
+        <ul class="home-link-list lf">
+            <li class=" link-item "><a href="#" target="_blank"><i class="iconfont"></i>选购手机</a></li>
+            <li class=" link-item "><a href="#" target="_blank"><i class="iconfont"></i>企业团购</a></li>
+            <li class=" link-item "><a href="#" target="_blank"><i class="iconfont"></i>F码通道</a></li>
+            <li class=" link-item "><a href="#" target="_blank"><i class="iconfont"></i>米粉卡</a></li>
+            <li class=" link-item "><a href="#" target="_blank"><i class="iconfont"></i>以旧换新</a></li>
+            <li class=" link-item "><a href="#" target="_blank"><i class="iconfont"></i>话费充值</a></li>
+        </ul>
+        <!--三张小图广告-->
+        <ul class="home-banner-list lf clearfix">
+            <li class="first"><a href=""><img src="img/index/pic/banner-item1.jpg" alt="红米5 Plus-绿"></a></li>
+            <li><a href=""><img src="img/index/pic/banner-item2.jpg" alt="红米Note 5A高配-直降100"></a></li>
+            <li><a href=""><img src="img/index/pic/banner-item3.jpg" alt="小米路由器3-立减30元"></a></li>
+        </ul>
+    </div>
+    <!--明星单品轮播-->
+    <div class="home-star-goods container">
+        <div class="box-hd">
+            <h2 class="title">小米闪购</h2>
+            <div class="more">
+                <a href="javascript:void(0);" class="control control-prev iconfont icon-shangyige"></a>
+                <a href="javascript:void(0);" class="control control-next iconfont icon-xiayige1"></a>
+            </div>
+        </div>
+        <div class="xm-flashPurchase-countdown">
+            <p class="time-title">20:00 场</p>
+            <img src="img/index/carousel/flashpurchase.png" alt="">
+            <p class="sub">距离开始还有</p>
+            <div class="countdown">
+                <span class="box lf">00</span>
+                <span class="dosh lf">:</span>
+                <span class="box lf minutes">00</span>
+                <span class="dosh lf">:</span>
+                <span class="box lf seconds">00</span>
+            </div>
+        </div>
+        <div class="box-bd">
+            <ul class="goods-list"></ul>
+        </div>
+    </div>
+</div>
+<!--商品种类楼层-->
+<div class="home-main">
+        <div class="container">
+            <!--1 家电层-->
+            <div id="homeelec" class="home-brick-box">
+                <div class="box-hd">
+                    <h2 class="title">家电</h2>
+                    <div class="more">
+                        <ul class="tab-list">
+                            <li class="tab-active">热门</li>
+                            <li>电视影音</li>
+                            <li>电脑</li>
+                            <li>家居 </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box-bd">
+                    <div class="box-bd-left lf">
+                        <ul class="brick-promo-list clearfix">
+                            <li class="brick-item">
+                                <a href="#">
+                                    <img src="img/index/pic/i1.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-bd-right lf">
+                        <div id="homeelec-content"     class="tab-container"></div>
+                    </div>
+                </div>
+            </div>
+            <!--2 智能层-->
+            <div id="smart" class="home-brick-box">
+                <div class="box-hd">
+                    <h2 class="title">智能</h2>
+                    <div class="more">
+                        <ul class="tab-list">
+                            <li class="tab-active">热门</li>
+                            <li>出行</li>
+                            <li>健康</li>
+                            <li>酷玩 </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box-bd">
+                    <div class="box-bd-left lf">
+                        <ul class="brick-promo-list clearfix">
+                            <li class="brick-item">
+                                <a href="#">
+                                    <img src="img/index/pic/xiaomishouhuan2.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="brick-item">
+                                <a href="#">
+                                    <img src="img/index/pic/tiwenji.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-bd-right lf">
+                        <div id="smart-content"     class="tab-container"></div>
+                    </div>
+                </div>
+            </div>
+            <!--3 搭配-->
+            <div id="match" class="home-brick-box">
+                <div class="box-hd">
+                    <h2 class="title">搭配</h2>
+                    <div class="more">
+                        <ul class="tab-list">
+                            <li class="tab-active">热门</li>
+                            <li>耳机音箱</li>
+                            <li>电源</li>
+                            <li>电池存储卡 </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box-bd">
+                    <div class="box-bd-left lf">
+                        <ul class="brick-promo-list clearfix">
+                            <li class="brick-item">
+                                <a href="#">
+                                    <img src="img/index/pic/i3_1.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="brick-item">
+                                <a href="#">
+                                    <img src="img/index/pic/i3_2.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-bd-right lf">
+                        <div id="match-content" class="tab-container"></div>
+                    </div>
+                </div>
+            </div>
+            <!--4 配件-->
+            <div id="accessories" class="home-brick-box">
+				<div class="box-hd">
+					<h2 class="title">配件</h2>
+					<div class="more">
+						<ul class="tab-list">
+							<li class="tab-active">热门</li>
+							<li>保护套</li>
+							<li>贴膜</li>
+							<li>其他配件</li>
+						</ul>
+					</div>
+				</div>
+				<div class="box-bd">
+					<div class="box-bd-left lf">
+						<ul class="brick-promo-list clearfix">
+							<li class="brick-item">
+								<a href="#">
+									<img src="img/index/pic/i4_1.jpg" alt="">
+								</a>
+							</li>
+							<li class="brick-item">
+								<a href="#">
+									<img src="img/index/pic/i4_2.jpg" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="box-bd-right lf">
+						<div id="accessories-content"  class="tab-container"></div>
+					</div>
+				</div>
+			</div>
+            <!--5 周边-->
+            <div id="around" class="home-brick-box">
+                <div class="box-hd">
+                    <h2 class="title">周边</h2>
+                    <div class="more">
+                        <ul class="tab-list">
+                            <li class="tab-active">热门</li>
+                            <li>出行</li>
+                            <li>居家</li>
+                            <li>生活周边</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box-bd">
+                    <div class="box-bd-left lf">
+                        <ul class="brick-promo-list clearfix">
+                            <li class="brick-item">
+                                <a href="#">
+                                    <img src="img/index/pic/i5_1.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="brick-item">
+                                <a href="#">
+                                    <img src="img/index/pic/i5_2.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-bd-right lf">
+                        <div id="around-content"  class="tab-container"></div>
+                    </div>
+                </div>
+            </div>
+            <!--6 为你推荐
+            <div id="recommend" class="home-recm-box ">
+                <div class="box-hd">
+                    <h2 class="title">为你推荐</h2>
+                </div>
+                <div id="recommend-bd" class="box-bd">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>-->
+            <!--7 热评产品-->
+            <div id="comment" class="home-review-box ">
+                <div class="box-hd">
+                    <h2 class="title">热评产品</h2>
+                </div>
+                <div id="comment-bd" class="box-bd">
+                    <ul class="review-list clearfix">
+                    </ul>
+                </div>
+            </div>
+            <!--视频-->
+            <div id="video" class="home-video-box">
+                <div class="box-hd">
+                    <h2 class="title">视频</h2>
+					<div class="more">
+						<a class="more-link" href="#">查看全部</a>
+						<i class="iconfont"></i>	
+					</div>
+                </div>
+                <div id="video-bd" class="box-bd">
+					<ul class="video-list">
+						<!--<li>
+							<div class="video">
+								<video src="img/video/note3video1.mp4" width=234px height=200px></video>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+            </div>
+        </div>
+    </div>
+    <div id="lift">
+        <ul class="lift_list">
+            <li class="lift_item">
+                <a href="javascript:;" class="lift_btn">
+                    <SPAN CLASS="LIFT_BTN_TXT">家电</SPAN>
+                </a>
+            </li>
+            <li class="lift_item">
+                <a href="javascript:;" class="lift_btn">
+                    <span class="lift_btn_txt">智能</span>
+                </a>
+            </li>
+            <li class="lift_item">
+                <a href="javascript:;" class="lift_btn">
+                    <span class="lift_btn_txt">搭配</span>
+                </a>
+            </li>
+            <li class="lift_item">
+                <a href="javascript:;" class="lift_btn">
+                    <span class="lift_btn_txt">配件</span>
+                </a>
+            </li>
+            <li class="lift_item">
+                <a href="javascript:;" class="lift_btn">
+                    <span class="lift_btn_txt">周边</span>
+                </a>
+            </li>
+
+            <!--  -->
+        </ul>
+        <div >
+            <a href="#" class="back">
+                <span>
+                    返回 </br> 顶部
+                </span>
+            </a>
+        </div>
+    </div>
+	<div class="container">
+		<div class="video ">
+			<h1>品质之魂，存于匠心</h1>
+			<video id="v3" class="v3" >
+				<source src="img/video/1.mp4">您的浏览器版本太低，请升级
+			</video>
+		</div>
+	</div>
+<div class="footer">
+    <!--<iframe src="02_footer.html" frameborder="0" width="100%" height="540px" scrolling="no"></iframe>-->
+</div>
+<script src="js/jquery-3.2.1.js" ></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

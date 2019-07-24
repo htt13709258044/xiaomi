@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ <link rel="stylesheet" href="css/base.css">
+ <link rel="stylesheet" href="font/iconfont.css">
+ <link rel="stylesheet" href="css/01_header.css">
+ <link rel="stylesheet" href="css/02_footer.css">
+  <style>
+    .close{
+	   width: 700px;
+	   margin:0 auto;
+	   font-family:"宋体";
+        margin-top: 100px;
+        text-align: center;
+	}
+	.close>div:first-child{
+	   font-size:47px;
+	   color:#E01F29;
+	   font-weight:bold;
+	}
+	.close_time{
+	   font-size:30px;
+        margin-bottom: 30px;
+	}
+  </style>
+ </head>
+ <body>
+ <div class="header"></div>
+    <div class="close container">
+	    <div>本页面正在开发中,敬请期待....</div><br>
+        <div class="close_time"><span  id="msg">5</span>秒后自动关闭</div>
+        <img src="img/lookforward/lookforward_img1.png" class="img" alt="">
+	</div>
+	<script>
+      function task(){
+	     var n=parseInt(msg.innerHTML);
+		 n--;
+		 if(n>0)
+		   msg.innerHTML=n;
+		 else{
+			 location = "index.html"
+		   }
+	   }
+	   var timer=setInterval(task,1000);
+	</script>
+    <div class="footer"></div>
+    <script src="js/jquery-3.2.1.js" ></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+ </body>
+</html>
